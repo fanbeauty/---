@@ -1,0 +1,45 @@
+<import src="../tpls/music.wxml"/>
+<view class="container">
+
+<view class="bg_music" wx:if="{{isBgMusic}}">
+  <template is="myMusic" data="{{status,music_title}}"></template>
+  <view class="music_right">
+    <view class="musicStatus">
+      <image src="https://www.huany.top/Tanabata/play.png" mode="scaleToFill"   bindtap="audioPlay" wx:if="{{status==2 || status==0}}"></image>
+      <image src="https://www.huany.top/Tanabata/pause.png" mode="scaleToFill" bindtap="audioPause" wx:else></image>
+    </view>
+  </view>
+</view>
+
+<view class="panel" style="{{pannelStyle}}">
+<image src="{{panel.topicImg}}"></image>
+<view class="word">
+  <text class="pic-author">{{panel.pic_author}}</text>
+  <text class="content">{{panel.content}}</text>
+  <text class="content-author">{{panel.content_author}}</text>
+</view>
+</view>
+
+<view class="topic" bindtap="toMovie">
+<image src="{{topic.topic_img}}"></image>
+<view class="abstract">
+<text>{{topic.topic_text}}</text>
+</view>
+</view>
+
+
+
+
+
+<block wx:for="{{content}}">
+<view class="content">
+<text class="huany">-ONE STORY-</text>
+<text class="title">{{item.title}}</text>
+<text class="author">{{item.author}}</text>
+<image src="{{item.img}}"></image>
+<text class="abstract">{{item.text}}</text>
+<text class="date">{{item.date}}</text>
+</view>
+</block>
+
+</view>

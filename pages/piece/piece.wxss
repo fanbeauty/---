@@ -1,0 +1,56 @@
+@import '../tpls/music.wxss';
+
+swiper{
+  height: 480rpx;
+}
+
+.scroll image{
+  width: 100%;
+}
+
+.moment{
+  width: 100%;
+  text-align: center;
+}
+
+.moment .moment-font{
+  background: white;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  text-shadow:2px 2px 5px #333333;
+}
+
+.moment .moment-content{
+  display: flex;
+  flex-direction:row;
+}
+
+
+.moment .moment-left{
+  width:100rpx;
+  height: 1000px;
+}
+
+
+.gallery-box{
+  margin:0 20rpx 20rpx 20rpx;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-between;
+  margin-bottom: 20px;
+}
+
+.gallery-item{
+  min-height:300rpx;
+  width: 49%;
+  border-radius: 10rpx;
+  margin-right: 0;
+  margin-bottom: 10rpx;
+  border: 1px solid beige;
+}
+.gallery-item image{
+  margin: 10rpx auto 0 auto;
+  width:100%;
+  border-radius: 10rpx;
+}

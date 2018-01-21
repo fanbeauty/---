@@ -1,0 +1,73 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  padding-top: 5px;
+}
+
+.loverMustDo{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  border: 1px solid #ebe7e8;
+  border-radius: 5px;
+  margin: 10px auto 0px auto;
+  box-shadow: 0 0 5px #f1eeef; 
+}
+
+.loverMustDo .lover{
+  height: 300px;
+}
+
+.loverMustDo .lover image{
+  width: 100%;
+  height: 300px;
+  border-radius: 5px;
+  
+}
+
+
+.loverMustDo .word{
+  border-left: 3px solid #f1eeef;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  
+} 
+
+.loverMustDo .title{
+  color: #363636;
+  text-align: center;
+  margin-top: 10px;
+  
+}
+
+.loverMustDo .userName{
+  color: #8b8b8b;
+  margin-top: 10px;
+  font-size: 12px;
+  text-align: center;
+}
+
+.loveList{
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+  color: #ffa6b7;
+  height: 30px;
+}
+
+.loveList .notePad{
+  margin-left: 80px;
+  width: 8%;
+}
+
+.loveList .notePad image{
+  width: 100%;
+  border-radius: 3px;
+}
+
+.loveList .loveWord{
+  margin-left: 5px;
+  font-size: 12px;
+  line-height: 30px;
+}

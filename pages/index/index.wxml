@@ -1,0 +1,8 @@
+<view class="container" >
+<text class="moto">hello,欢欢</text>
+<view class="border">
+<text  bindtap="coming"><text class="em">点击</text>属于你的浪漫之旅</text>
+</view>
+<image class="bottom" src="/images/avatar/buttom.png" mode="scaleToFill"></image>
+</view>
+ 

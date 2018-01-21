@@ -1,0 +1,34 @@
+<view class="container">
+<view class="banner">
+<image src="https://www.huany.top/Tanabata/banner.jpg" mode="scaleToFill"></image>
+</view>
+<view class="content">
+<view class="title"><text>看完这些短片，也许你会更了解爱情</text></view>
+<view class="content-item">
+<view class="content-item-movie">
+<video objectFit="cover" poster="https://www.huany.top/Tanabata/whatIsLove.jpg" src="https://www.huany.top/Tanabata/love.flv" controls></video>
+</view>
+<view bindtap="toMovieContent">
+<view class="content-item-title">什么是爱情?看完这个短片你就知道</view>
+<view class="content-item-abstract">所有的爱情都逃不过这些。</view>
+<view class="content-item-author">
+  <text>丹丹杨</text>
+</view>
+</view>
+</view>
+
+<view class="content-item">
+<view class="content-item-movie">
+<video objectFit="cover" poster="https://www.huany.top/Tanabata/xianrenzhang.jpg" src="https://www.huany.top/Tanabata/xianrenzhang.mp4" controls></video>
+</view>
+<view>
+<view class="content-item-title">什么是爱情?看完这个短片你就知道</view>
+<view class="content-item-abstract">所有的爱情都逃不过这些。</view>
+<view class="content-item-author">
+  <text>丹丹杨</text>
+</view>
+</view>
+</view>
+
+</view>
+</view>

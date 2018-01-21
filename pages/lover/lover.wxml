@@ -1,0 +1,15 @@
+<view class="container">
+  <view class="loverMustDo">
+  <view class="lover">
+    <image src="https://www.huany.top/Tanabata/lovers.jpg" mode="aspectFill"></image>
+  </view>
+    <view class="word" bindtap="toNinety">
+      <view class="title"><text>情侣间必做的99件事</text></view>
+      <view class="userName"><text>{{username}}</text></view>
+      <view class="loveList">
+      <view class="notePad"><image src="/images/lover/notePad.png" mode="widthFix"></image></view>
+      <view class="loveWord"><text>LoveList</text></view>
+      </view>
+    </view>
+  </view>
+</view>

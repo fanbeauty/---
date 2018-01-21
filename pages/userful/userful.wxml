@@ -1,0 +1,44 @@
+<import src="../tpls/music.wxml"/>
+<view class="container">
+  <view class="bg_music" wx:if="{{isBgMusic}}">
+  <template is="myMusic" data="{{status,music_title}}"></template>
+  <view class="music_right">
+    <view class="musicStatus">
+      <image src="https://www.huany.top/Tanabata/play.png" mode="scaleToFill"   bindtap="audioPlay" wx:if="{{status==2 || status==0}}"></image>
+      <image src="https://www.huany.top/Tanabata/pause.png" mode="scaleToFill" bindtap="audioPause" wx:else></image>
+    </view>
+  </view>
+</view>
+  <view class="foryou" style="{{pannelStyle}}">
+    <text>❤ huanhuan baby ❤</text>
+  </view>
+  <form bindsubmit="formSubmit">
+    <view class="search">
+      <input name="food" type="text" confirm-type="search" placeholder-style="color:#F8C3CD;font-size:14px;" placeholder="food..." />
+       <button form-type="submit" plain="true">sousou</button>
+    </view>
+  </form>
+
+  <view class="recentSearch" wx:if="{{!greens}}">
+    <view class="searchTextAndDelete">
+      <text>最近搜索</text>
+      <image bindtap="clearKeyArr" mode="widthFix" src="https://www.huany.top/Tanabata/rabish.jpg"></image>
+    </view>
+    <view class="someSearch">
+      <block wx:for="{{keyArr}}">
+        <view class="searchItem" bindtap="searchKeyWord" data-item="{{item}}" ><text>{{item}}</text></view>
+     </block>
+    </view>
+  </view>
+  <view class="result">
+   <block wx:for="{{greens}}">
+    <view class="result-item" bindtap="toDetail" data-burden="{{item.burden}}" data-albums="{{item.albums[0]}}" data-title="{{item.title}}" data-imtro="{{item.imtro}}" data-ingredients="{{item.ingredients}}" data-steps="{{item.steps}}">
+      <image mode="widthFix" src="{{item.albums[0]}}"></image>
+      <view class="titleAndariticle">
+        <text class="title">{{item.title}}</text>
+        <text class="ariticle">{{item.burden}}</text>
+      </view>
+    </view>
+   </block>
+  </view>
+</view>

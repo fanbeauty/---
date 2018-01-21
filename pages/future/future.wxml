@@ -1,0 +1,74 @@
+<import src="../tpls/music.wxml"/>
+<view class="container">
+  <view class="bg_music" wx:if="{{isBgMusic}}">
+  <template is="myMusic" data="{{status,music_title}}"></template>
+  <view class="music_right">
+    <view class="musicStatus">
+      <image src="https://www.huany.top/Tanabata/play.png" mode="scaleToFill"   bindtap="audioPlay" wx:if="{{status==2 || status==0}}"></image>
+      <image src="https://www.huany.top/Tanabata/pause.png" mode="scaleToFill" bindtap="audioPause" wx:else></image>
+    </view>
+  </view>
+</view>
+
+  <view class="top" style="{{pannelStyle}}">
+    <text>belongs us</text>
+    <view class="us">
+    <image bindtap="toPlan" class="you" src="https://www.huany.top/Tanabata/index.png"></image>
+    <image bindtap="toMemory" class="me" src="https://www.huany.top/Tanabata/me.png"></image>
+    </view>
+  </view>
+  <view class="middleLeft" wx:if="{{status==2}}">
+
+    <view class="leftContainer">
+     <form bindsubmit="bindFormSubmit">
+        <view class="inputArea">
+          <textarea name="heartWord" placeholder-style="color:#F8C3CD;font-size:12px;font-family:KaiTi" placeholder="I want to tell you..." />
+        </view>
+        <view class="weatherAndsubmmit">
+            <view class="weather">
+                <image src="{{weather_pic}}"></image>
+                <text>{{weather}}</text>
+            </view>
+           <button plain form-type="submit" class="submit">
+           <view class="submitContainer">
+           <text>发送</text>
+           <image src="https://www.huany.top/Tanabata/plane.png"></image>
+           </view>
+           </button>
+        </view>
+      </form>
+    </view>
+  </view>
+  <view class="middleRight" wx:else>
+    <view class="rightContainer">
+
+<block wx:for="{{lastSay}}">
+      <view class="oneWord">
+      <view class="date"><text>于{{item.time.year}}年开启迹忆碎片之旅\n定格于{{item.time.year}}年{{item.time.month}}月{{item.time.day}}日</text></view>
+      <view class="memory">
+        <view class="memory-title">
+          <image src="https://www.huany.top/Tanabata/title.png"></image>
+          <text><text class="suipian">{{item.name}}</text>\n{{item.time.xinqi}}{{item.time.hours}}:{{item.time.minute}}</text>
+        </view>
+        <view class="memory-content">
+          <view class="section">
+            <text>{{item.content}}</text>
+          </view>
+        </view>
+        <view class="memory-weather">
+          <text class="location">{{item.location}}</text>
+          <text class="air">空气:{{item.aqi}}</text>
+          <text class="weather">{{item.weather}}</text>
+          <text class="temp">{{item.temperature}}℃</text>
+        </view>
+      </view>
+      </view>
+</block>
+      <view class="last">
+        <text>没有更多了^.^</text>
+      </view>
+    </view>
+  
+  </view>
+  <view class="buttom"></view>
+</view>

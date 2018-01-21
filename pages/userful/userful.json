@@ -1,0 +1,8 @@
+{
+    "navigationBarBackgroundColor": "#F8C3CD",
+    "navigationBarTextStyle": "#646A58",
+    "navigationBarTitleText": "Small Greedy Cat",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+}

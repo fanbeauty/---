@@ -1,0 +1,46 @@
+page{
+  background-color: #F8C3CD;
+}
+
+.banner image{
+  width: 100%;
+}
+
+.content{
+  padding: 15px;
+}
+
+.content .title{
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.content .content-item{
+  margin-top: 20px;
+  background-color: white;
+  height: 320px;
+}
+
+.content .content-item .content-item-movie video{
+  width: 100%;
+}
+
+.content .content-item .content-item-title{
+  font-size: 18px;
+  margin-top: 10px;
+  margin-left: 10px;
+  letter-spacing: 1px;
+}
+
+.content .content-item .content-item-abstract{
+  margin-top: 10px;
+  margin-left: 10px;
+  font-size: 14px;
+  color: #4B4B4B;
+}
+
+.content .content-item .content-item-author{
+  margin: 10px;
+  font-size: 10px;
+  color: #777;
+}

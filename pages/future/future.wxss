@@ -1,0 +1,252 @@
+@import '../tpls/music.wxss';
+
+page{
+  background-color: #F1F1F1;
+}
+
+.top{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: white;
+  border-bottom: 1px dashed #FEDFE1;
+}
+
+.top text{
+  font-size: 15px;
+  font-family: "KaiTi_GB2312";
+}
+
+.top .us{
+  display: flex;
+  flex-direction: row;
+  width: 120px;
+  height: 60px;
+  margin: 10px auto 10px auto;
+}
+
+.top image{
+  width: 60px;
+  height: 60px;
+}
+
+.top .you{
+  margin-left: 5px;
+  margin-right: -10px;
+}
+
+.top .me{
+  margin-right: 5px;
+}
+
+.rightContainer{
+  background-color: #F1F1F1;
+}
+
+.rightContainer .date{
+  border-left: 1px dashed #606060;
+  height: 40px;
+  font-size: 10px;
+  line-height: 18px;
+  color: #606060;
+  padding-top: 5px;
+  padding-left: 64px;
+  margin-left: 64px;
+}
+
+.rightContainer .memory{
+  width:340px;
+  margin: 0px auto 5px auto;
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid beige;
+}
+
+.rightContainer .memory .memory-title{
+  display: flex;
+  flex-direction: row;
+  height: 40px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.rightContainer .memory .memory-title image{
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.rightContainer .memory .memory-title text{
+  font-size: 10px;
+  line-height: 20px;
+}
+
+.rightContainer .memory .memory-title text .suipian{
+  color: #F8C3CD;
+}
+
+.rightContainer .memory .memory-content {
+  padding-left: 10px;
+  padding-top: 20px;
+}
+
+.rightContainer .memory .memory-content .section{
+  font-size: 12px;
+  line-height: 18px;
+  margin-bottom: 15px;
+}
+
+.rightContainer .memory .memory-weather{
+  border-top: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  font-size: 10px;
+  color: #606060;
+  height: 30px;
+  line-height: 30px;
+}
+
+.rightContainer .memory .memory-weather .location{
+  margin-left: 10px;
+}
+
+.rightContainer .memory .memory-weather .air{
+  margin-left: 20px;
+}
+
+.rightContainer .memory .memory-weather .weather{
+  margin-left:170px;
+}
+
+
+.rightContainer .memory .memory-weather .temp{
+  margin-left: 20px;
+}
+
+.rightContainer .last{
+  height: 80px;
+  padding-top: 10px;
+  text-align: center;
+  font-size: 12px;
+  color: #606060;
+}
+
+
+.leftContainer{
+  width:340px;
+  margin: 40px auto 5px auto;
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid beige;
+
+}
+
+.leftContainer textarea{
+  height: 300px;
+  width: 100%;
+}
+
+.leftContainer .weatherAndsubmmit{
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid black;
+  height: 30px;
+  line-height: 30px;
+  font-size: 10px;
+}
+
+.leftContainer .weatherAndsubmmit .weather{
+  display: flex;
+  flex-direction: row;
+  font-size: 12px;
+  margin-left: 10px;
+  width: 100px;
+}
+
+.leftContainer .weatherAndsubmmit .weather image{
+  margin-top: 5px;
+  width: 20px;
+  height: 20px;
+}
+
+
+
+
+
+.leftContainer .weatherAndsubmmit .submit{
+  margin-left: 140px;
+  border: 1px solid white;
+}
+
+.leftContainer .weatherAndsubmmit .submit text{
+  font-size: 12px;
+}
+
+
+.leftContainer .weatherAndsubmmit .submit .submitContainer{
+  display: flex;
+  flex-direction: row;
+}
+
+
+.leftContainer .weatherAndsubmmit .submit image{
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

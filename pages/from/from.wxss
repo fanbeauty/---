@@ -1,0 +1,110 @@
+@import '../tpls/music.wxss';
+
+page{
+  background-color: #DDDDDD;
+}
+.panel{
+  background-color: white;
+}
+.panel image{
+  width: 100%;
+}
+
+.word{
+  display: flex;
+  flex-direction: column;
+}
+
+.word .pic-author{
+  font-size: 10px;
+  color: #777;
+  margin: 5px;
+  text-align: center;
+}
+
+.word .content {
+  margin: 10px;
+  font-size: 14px;
+  line-height: 25px;
+  text-indent: 50rpx;
+
+}
+
+.word .content-author{
+  font-size: 10px;
+  color: #777;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+
+/*专题*/
+
+.topic{
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  background-color: white;
+}
+
+.topic image{
+width: 95%;
+margin: 10px auto 5px auto;
+}
+
+.topic .abstract{
+  margin: 10px 0 20px 10px;
+  font-size: 12px;
+  color: #777;
+}
+
+
+
+.content{
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  background-color: white;
+}
+
+.content .huany{
+  text-align: center;
+  font-size: 12px;
+  color: #777;
+  margin-top: 5px;
+}
+
+.content .title{
+  margin-left: 10px;
+  margin-top: 10px;
+  font-size: 16px;
+  letter-spacing: 3px;
+}
+
+.content .author{
+  margin-left: 10px;
+  margin-top: 10px;
+  font-size: 12px;
+  color:  #777;
+}
+
+.content image{
+  width: 95%;
+  margin: 5px auto 5px auto;
+}
+
+.content .abstract{
+  margin-left:10px;
+  font-size: 12px;
+  color: #777;
+  line-height: 20px;
+}
+
+.content .date{
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-bottom: 5px;
+  font-size: 10px;
+  color: #777;
+}

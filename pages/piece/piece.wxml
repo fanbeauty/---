@@ -1,0 +1,36 @@
+<import src="../tpls/music.wxml"/>
+<view class="container">
+
+<view class="bg_music" wx:if="{{isBgMusic}}">
+  <template is="myMusic" data="{{status,music_title}}"></template>
+  <view class="music_right">
+    <view class="musicStatus">
+      <image src="https://www.huany.top/Tanabata/play.png" mode="scaleToFill"   bindtap="audioPlay" wx:if="{{status==2 || status==0}}"></image>
+      <image src="https://www.huany.top/Tanabata/pause.png" mode="scaleToFill" bindtap="audioPause" wx:else></image>
+    </view>
+  </view>
+</view>
+
+
+<view class="scroll" style="{{pannelStyle}}">
+<swiper indicator-dots="true" interval="20000">
+<block wx:for="{{banner}}">
+<swiper-item>
+<image src="{{item}}" ></image>
+</swiper-item>
+</block>
+</swiper>
+</view>
+<view class="moment">
+<view class="moment-font">
+  <text>Unforgettable memories</text>
+</view>
+<view class="gallery-box">
+<block wx:for="{{gallery}}">
+<view class="gallery-item" bindtap="toMoment" data-id="{{index}}" >
+<image src="{{item}}"></image>
+</view>
+</block>
+</view>
+</view>
+</view>

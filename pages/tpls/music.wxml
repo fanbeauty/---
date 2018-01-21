@@ -1,0 +1,11 @@
+<template name="myMusic">
+
+<view class="music-left">
+<view class="musicPlay">
+<image src="https://www.huany.top/Tanabata/musicPlay2.gif"  wx:if="{{status==1}}"></image>
+<image src="https://www.huany.top/Tanabata/musicPlay3.png" wx:else></image>
+</view>
+<text>{{music_title}}</text>
+</view>
+
+</template>

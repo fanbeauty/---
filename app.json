@@ -1,0 +1,61 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/piece/piece",
+    "pages/from/from",
+    "pages/moment/moment",
+    "pages/future/future",
+    "pages/movie/movie",
+    "pages/movieContent/movieContent",
+    "pages/memory/memory",
+    "pages/userful/userful",
+    "pages/foodDetail/foodDetail",
+    "pages/lover/lover",
+    "pages/ninety/ninety"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#F8C3CD",
+    "navigationBarTextStyle": "#646A58",
+    "navigationBarTitleText": "欢欢宝贝",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "borderStyle": "white",
+    "selectedColor": "#F8C3CD",
+    "backgroundColor": "white",
+    "list": [
+      {
+        "pagePath": "pages/piece/piece",
+        "text": "me",
+        "iconPath": "/images/tar/me.jpg",
+        "selectedIconPath": "/images/tar/me@selected.jpg"
+      },
+      {
+        "pagePath": "pages/from/from",
+        "text": "❤",
+        "iconPath": "/images/tar/love.jpg",
+        "selectedIconPath": "/images/tar/love@selected.jpg"
+      },
+      {
+        "pagePath": "pages/future/future",
+        "text": "you",
+        "iconPath": "/images/tar/you.jpg",
+        "selectedIconPath": "/images/tar/you@selected.jpg"
+      },
+      {
+        "pagePath": "pages/userful/userful",
+        "text": "miss",
+        "iconPath": "/images/tar/special.jpg",
+        "selectedIconPath": "/images/tar/special@selected.jpg"
+      },
+      {
+        "pagePath": "pages/lover/lover",
+        "text": "lover",
+        "iconPath": "/images/tar/lover.png",
+        "selectedIconPath": "/images/tar/lover@selected.png"
+      }
+    ]
+  }
+}

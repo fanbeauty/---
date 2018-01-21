@@ -1,0 +1,93 @@
+.container{
+  display: flex;
+  flex-direction: column;
+}
+
+.top_pic{
+  height: 480rpx;
+}
+
+.top_pic image{
+  width: 100%;
+}
+
+.title{
+    margin-top: 20px;
+  padding-top: 10px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  height: 80px;
+}
+
+.airticle{
+  display: flex;
+  flex-direction: column;
+  padding:10px 10px 20px 10px;
+}
+
+.airticle .airticle-title{
+  font-size: 14px;
+  font-weight: bold;
+  border-bottom: 1px dashed black;
+  height: 20px;
+}
+
+.airticle .airticle-item{
+  display: flex;
+  flex-direction:row;
+  font-size: 14px;
+  height: 30px;
+  line-height: 30px;
+  border-bottom:1px dashed black; 
+}
+
+
+.airticle .airticle-item .food{
+  width: 150px;
+  margin-right: 50px;
+}
+
+.steps{
+  display: flex;
+  flex-direction: column;
+  padding:10px 10px 20px 10px;
+}
+
+.steps .zuofa{
+  font-size: 14px;
+  font-weight: bold;
+  height: 20px;
+}
+
+.steps .steps-item{
+  margin-top: 5px;
+}
+
+.steps .steps-item text{
+  font-size: 14px;
+}
+
+.steps .steps-item .steps-item-image{
+  margin: 5px auto 5px auto;
+  width: 95%;
+}
+
+.steps .steps-item image{
+  width:100%;
+}
+
+.imtro{
+   padding:10px 10px 20px 10px; 
+}
+
+.imtro .tips{
+  font-size: 14px;
+  font-weight: bold;
+  height: 20px;
+}
+
+.imtro .tips-content{
+  font-size: 12px;
+  text-indent: 20px;
+}

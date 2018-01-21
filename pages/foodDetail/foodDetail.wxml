@@ -1,0 +1,34 @@
+<view class="container">
+  <view class="top_pic">
+    <image mode="aspectFill" src="{{albums}}"></image>
+  </view>
+  <view class="title">
+    <text>{{title}}</text>
+  </view>
+  <view class="airticle">
+    <view class="airticle-title"><text>用料</text></view>
+    <view class="airticle-pannel">
+    <block wx:for="{{ingredients}}">
+      <view class="airticle-item">
+        <text class="food">{{item[0]}}</text>
+        <text class="amount">{{item[1]}}</text>
+      </view>
+    </block>
+    </view>
+  </view>
+  <view class="steps">
+  <view class="zuofa"><text>做法</text></view>
+  <block wx:for="{{steps}}">
+    <view class="steps-item">
+      <text>{{item.step}}</text>
+      <view class="steps-item-image">
+      <image src="{{item.img}}" mode="widthFix"></image>
+      </view>
+    </view>
+  </block>
+  </view>
+  <view class="imtro">
+    <view class="tips">tips</view>
+    <text class="tips-content">{{imtro}}</text>
+  </view>
+</view>

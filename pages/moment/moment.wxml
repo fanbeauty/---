@@ -1,0 +1,20 @@
+<!--moment.wxml-->
+<view class="container">
+<view class="container-top">
+<image src="{{currentData.top_img}}"></image>
+<view class="music">
+<block wx:if="{{audioStatus==2 || audioStatus==0}}">
+<image src="https://www.huany.top/Tanabata/play.png" mode="scaleToFill" bindtap="audioPlay"></image>
+</block>
+<block wx:else>
+<image src="https://www.huany.top/Tanabata/pause.png" mode="scaleToFill" bindtap="audioPause"></image>
+</block>
+<audio id="myMusic" src="{{src}}" ></audio>
+</view>
+</view>
+<view class="article">
+<view class="article-title">{{currentData.title}}</view>
+<view class="article-author">{{currentData.author}}</view>
+<view class="article-content">{{currentData.content}}</view>
+</view>
+</view>
